@@ -5,20 +5,17 @@
 
 [![Brave404 - Project](https://img.shields.io/badge/Brave404-Project-red?style=for-the-badge&logo=youtube)](https://github.com/brave4041)
 [![Powered By - YT-DLP](https://img.shields.io/badge/Powered_By-YT--DLP-2ea44f?style=for-the-badge)](https://github.com/yt-dlp/yt-dlp)
-[![Platform - Windows](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows)](https://microsoft.com)
+[![Platform - Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows)](https://microsoft.com)
+[![Platform - Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://linux.org)
+[![Platform - macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple)](https://apple.com)
 
 **Download YouTube videos smoothly without typing complex commands.**
 <br>
-*Aplikasi "kulit" (GUI) modern untuk yt-dlp. Sekarang berbasis **PYTHON** agar bisa dijalankan di Windows, Linux, dan macOS!*
+*Aplikasi "kulit" (GUI) modern untuk yt-dlp. Berbasis **PYTHON** agar bisa dijalankan di Windows, Linux, dan macOS!*
 
 [Persiapan] • [Instalasi] • [Cara Pakai] • [Troubleshooting]
 
 </div>
-
----
-
-![Tampilan Aplikasi Brave Download Manager](https://via.placeholder.com/800x450?text=Preview+Aplikasi+Anda+Di+Sini)
-*> **Note:** Tampilan aplikasi yang bersih dan modern (Dark Mode).*
 
 ---
 
