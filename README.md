@@ -9,15 +9,20 @@
 
 **Download YouTube videos smoothly without typing complex commands.**
 <br>
-*Aplikasi "kulit" (GUI) modern untuk yt-dlp. Solusi terbaik cara download video YouTube di PC/Laptop Windows dengan mudah, gratis, dan tanpa iklan.*
+*Aplikasi "kulit" (GUI) modern untuk yt-dlp. Sekarang berbasis **PYTHON** agar bisa dijalankan di Windows, Linux, dan macOS!*
 
-[Persiapan] • [Instalasi] • [Cara Pakai] • [Troubleshooting] • [Download Gratis]
+[Persiapan] • [Instalasi] • [Cara Pakai] • [Troubleshooting]
 
 </div>
 
 ---
 
-## 🌟 Kenapa Pakai Ini? (SEO & Features)
+![Tampilan Aplikasi Brave Download Manager](https://via.placeholder.com/800x450?text=Preview+Aplikasi+Anda+Di+Sini)
+*> **Note:** Tampilan aplikasi yang bersih dan modern (Dark Mode).*
+
+---
+
+## 🌟 Kenapa Pakai Ini?
 
 Bingung **cara download video YouTube** kualitas tinggi (1080p, 4K, hingga 8K) yang **gratis dan aman**? Aplikasi ini adalah jawabannya.
 Berbeda dengan situs downloader online yang penuh iklan atau malware, aplikasi ini menggunakan mesin **yt-dlp** open-source yang legendaris, namun dengan tampilan yang **mudah dipakai (user friendly)**.
@@ -50,49 +55,94 @@ Tanpa ini, aplikasi tidak bisa jalan.
 3. **Download** file tersebut.
 
 ### 2. 🎬 Download Video Processor (FFMPEG)
-Wajib agar bisa download video kualitas tinggi (gabung video+audio) dan konversi ke MP3.
-1. Buka [Gyan.dev FFMPEG Builds](https://www.gyan.dev/ffmpeg/builds/).
-2. Cari link **`ffmpeg-release-essentials.zip`** dan download.
-3. **Extract (Unzip)** file tersebut.
-4. Anda akan mendapatkan sebuah folder. **Copy seluruh folder tersebut**.
+Wajib agar bisa download video kualitas tinggi dan audio MP3.
 
-### 3. 📦 Download Aplikasi Ini
-- Download file **`Brave_Download_Manager.exe`** dari rilis project ini.
+**Untuk Pengguna Windows:**
+1. Buka [Gyan.dev FFMPEG Builds](https://www.gyan.dev/ffmpeg/builds/).
+2. Download **`ffmpeg-release-essentials.zip`**, ekstrak/unzip, lalu copas foldernya ke folder project ini.
+
+**Untuk Pengguna Linux / macOS:**
+Biasanya cukup install lewat terminal saja:
+- **Ubuntu/Debian:** `sudo apt install ffmpeg`
+- **macOS (Homebrew):** `brew install ffmpeg`
+- **Arch Linux:** `sudo pacman -S ffmpeg`
+
+### 3. 📦 Download Aplikasi Ini (Pilih Salah Satu)
+
+**Opsi 1: Download EXE (Khusus Windows - Paling Mudah)**
+- Buka menu **Releases** di sebelah kanan halaman GitHub ini.
+- Download file **`Brave_Download_Manager.exe`**.
+- Tinggal klik 2x, langsung jalan (tanpa install Python).
+
+**Opsi 2: Download Manual (Zip)**
+- Klik tombol **Code** > **Download ZIP** di pojok kanan atas repo ini.
+- Ekstrak file zip-nya.
+- Anda perlu install Python untuk menjalankan script `.py`.
+
+**Opsi 3: Clone via Git (Semua OS: Windows, Mac, Linux)**
+Cara ini lebih cepat jika anda sudah menginstall Git (Wajib di Linux/Mac):
+```bash
+git clone https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows.git
+cd Brave-YouTube-Downloader-GUI-Windows
+```
 
 ---
 
-## � Cara Instalasi (Penyusunan Folder)
+## 💻 Spesifikasi Sistem (System Requirements)
 
-Agar aplikasi bekerja sempurna, **Struktur File** harus benar. Buatlah satu folder baru (misal: `MyDownloader`) dan susun isinya seperti ini:
+| Komponen | Spesifikasi Minimum | Rekomendasi |
+| :--- | :--- | :--- |
+| **Python** | Python 3.8+ | **Python 3.10+** |
+| **OS** | Windows 8/10/11, Linux, macOS | **Windows 10/11** atau **Linux Ubuntu** |
+| **RAM** | 2 GB | 4 GB+ |
+| **Internet** | Stabil (untuk download) | Kencang |
+
+> **Wajib:** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
+
+---
+
+## 📂 Cara Instalasi (Penyusunan Folder)
+
+Agar aplikasi bekerja sempurna, susun folder seperti ini:
 
 ```text
 MyDownloader/
-├── 📁 ffmpeg-6.0-essentials_build/  <-- Folder hasil ekstrak FFMPEG
-├── 📄 yt-dlp.exe                    <-- Mesin yt-dlp
-└── 🚀 Brave_Download_Manager.exe    <-- Aplikasi kita
+├── 📁 ffmpeg/                       <-- (Khusus Windows) Folder FFMPEG
+├── 📄 yt-dlp.exe                    <-- (Khusus Windows) Mesin yt-dlp
+├── 📄 yt-dlp                        <-- (Khusus Linux/Mac) Mesin yt-dlp tanpa ekstensi
+└── 🐍 Brave_Download_Manager.py     <-- Script Utama (Jalan di Semua OS)
 ```
 
-> **PENTING:** Pastikan file exe utama berada satu folder dengan `yt-dlp.exe`. Aplikasi akan otomatis mencari folder FFMPEG di sebelahnya.
+> **PENTING:**
+> - **Windows:** Wajib ada `ffmpeg` folder dan `yt-dlp.exe`.
+> - **Linux/Mac:** `ffmpeg` dan `yt-dlp` biasanya sudah terinstall di sistem (path), jadi folder ini bisa lebih bersih. App akan otomatis mendeteksinya.
 
 ---
 
 ## 📖 Cara Penggunaan
 
-1. **Jalankan Aplikasi**
-   Klik 2x pada **`Brave_Download_Manager.exe`**.
-   *(Jika Windows SmartScreen muncul, klik `More Info` -> `Run Anyway`)*.
+1. **Install Library (Opsional)**
+   Aplikasi ini menggunakan `tkinter` (biasanya sudah bawaan Python).
+   Jika anda di Linux: `sudo apt-get install python3-tk`
 
-2. **Paste Link**
+2. **Jalankan Aplikasi**
+   - **Windows:** Klik kanan `Brave_Download_Manager.py` -> *Open with Python*, ATAU buka CMD dan ketik:
+     ```bash
+     python Brave_Download_Manager.py
+     ```
+   - **Linux/Mac:** Buka terminal dan ketik `python3 Brave_Download_Manager.py`.
+
+3. **Paste Link**
    Salin link video YouTube, lalu tempel (Paste) di kolom **YouTube URL**.
 
-3. **Cek Video**
+4. **Cek Video**
    Klik tombol `CEK VIDEO`. Tunggu sebentar hingga aplikasi mengambil data resolusi.
 
-4. **Pilih & Download**
+5. **Pilih & Download**
    - Pilih kualitas yang diinginkan (misal `Video 1080p` atau `Audio Only`).
    - Klik `DOWNLOAD SEKARANG`.
 
-5. **Selesai!**
+6. **Selesai!**
    Video anda akan tersimpan otomatis di folder baru bernama **`Hasil Download`**.
 
 ---
@@ -101,7 +151,9 @@ MyDownloader/
 
 <details>
 <summary><b>❌ Aplikasi tidak mau terbuka / Error saat dibuka</b></summary>
-Pastikan sistem Windows anda mengizinkan "PowerShell Script execution" atau cukup jalankan sebagai Administrator. Aplikasi ini pada dasarnya adalah script canggih yang dibungkus menjadi EXE.
+1. **Belum Install Python:** Pastikan anda sudah install Python 3.x.
+2. **Library Kurang:** Jika di Linux, pastikan `tkinter` terinstall (`sudo apt install python3-tk`).
+3. **Double Click Gagal:** Coba buka lewat terminal/CMD: `python Brave_Download_Manager.py` untuk melihat pesan errornya.
 </details>
 
 <details>
