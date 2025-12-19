@@ -17,11 +17,6 @@
 
 ---
 
-![Tampilan Aplikasi Brave Download Manager](https://via.placeholder.com/800x450?text=Preview+Aplikasi+Anda+Di+Sini)
-*> **Note:** Tampilan aplikasi yang bersih dan modern (Dark Mode).*
-
----
-
 ## 🌟 Kenapa Pakai Ini? (SEO & Features)
 
 Bingung **cara download video YouTube** kualitas tinggi (1080p, 4K, hingga 8K) yang **gratis dan aman**? Aplikasi ini adalah jawabannya.
