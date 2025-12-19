@@ -6,6 +6,7 @@ import json
 import os
 import sys
 import platform
+import shutil
 
 APP_TITLE = "Powered by yt-dlp | Modified by Brave404"
 APP_SIZE = "640x490" 
@@ -50,25 +51,24 @@ class BraveDownloaderApp:
 
         self.setup_ui()
         self.log(f"Selamat Datang di {APP_TITLE}")
-        self.log(f"System: {platform.system()} {platform.release()}")
+        self.log(f"Sistem: {platform.system()} {platform.release()}")
         
         if not self.ytdlp_path:
             messagebox.showerror("Error", "yt-dlp tidak ditemukan!\nPastikan yt-dlp ada di folder yang sama atau terinstall di system path.")
-            self.log("[!] Error: yt-dlp missing.")
+            self.log("Error: yt-dlp tidak ditemukan.")
         else:
-            self.log(f"[v] Found yt-dlp: {self.ytdlp_path}")
+            self.log(f"yt-dlp terdeteksi: {self.ytdlp_path}")
 
         if self.ffmpeg_path:
-            self.log(f"[v] Found FFMPEG: {self.ffmpeg_path}")
+            self.log(f"FFMPEG terdeteksi: {self.ffmpeg_path}")
         else:
-            self.log("[!] FFMPEG not found (Audio merge might fail). check folder structure.")
+            self.log("FFMPEG tidak ditemukan (Gabung audio mungkin gagal). Cek folder aplikasi.")
 
     def find_executable(self, name):
         ext = ".exe" if platform.system() == "Windows" else ""
         local_path = os.path.join(self.cwd, name + ext)
         if os.path.exists(local_path):
             return local_path
-        import shutil
         return shutil.which(name)
 
     def find_ffmpeg(self):
@@ -80,7 +80,6 @@ class BraveDownloaderApp:
             if "ffmpeg" + ext in files:
                 return os.path.join(root, "ffmpeg" + ext)
         
-        import shutil
         return shutil.which("ffmpeg")
 
     def setup_ui(self):
@@ -141,7 +140,7 @@ class BraveDownloaderApp:
 
     def check_video_thread(self, url):
         self.log("-" * 30)
-        self.log(f"[*] Analyzing: {url}")
+        self.log(f"Menganalisa: {url}")
         
         try:
             cmd = [self.ytdlp_path, "--dump-single-json", "--no-warnings", url]
@@ -161,8 +160,8 @@ class BraveDownloaderApp:
             title = data.get('title', 'Unknown Title')
             uploader = data.get('uploader', 'Unknown Channel')
             
-            self.log(f"[+] Judul: {title}")
-            self.log(f"[+] Channel: {uploader}")
+            self.log(f"Judul: {title}")
+            self.log(f"Channel: {uploader}")
 
             formats = data.get('formats', [])
             res_set = set()
@@ -180,13 +179,13 @@ class BraveDownloaderApp:
                     self.combo_res.current(0)
                     self.btn_download.config(state="normal")
                 self.btn_check.config(state="normal")
-                self.log("[v] Analysis Done.")
+                self.log("Analisa Selesai.")
             
             self.root.after(0, update_ui)
 
         except Exception as e:
             def error_ui():
-                self.log(f"[!] Error: {str(e)}")
+                self.log(f"Error: {str(e)}")
                 self.btn_check.config(state="normal")
             self.root.after(0, error_ui)
 
@@ -202,8 +201,8 @@ class BraveDownloaderApp:
 
     def download_thread(self, url, selection):
         self.log("-" * 30)
-        self.log(f"[*] DOWNLOADING: {selection}")
-        self.log("[*] Do not close the window...")
+        self.log(f"MENDOWNLOAD: {selection}")
+        self.log("Jangan tutup jendela ini...")
 
         cmd = [self.ytdlp_path]
         
@@ -241,12 +240,12 @@ class BraveDownloaderApp:
 
             if process.returncode == 0:
                 self.root.after(0, lambda: messagebox.showinfo("Success", "Download Selesai!"))
-                self.root.after(0, lambda: self.log("[v] DOWNLOAD COMPLETED!"))
+                self.root.after(0, lambda: self.log("DOWNLOAD SELESAI!"))
             else:
-                 self.root.after(0, lambda: self.log("[!] Download Failed."))
+                 self.root.after(0, lambda: self.log("Download Gagal."))
 
         except Exception as e:
-            self.root.after(0, lambda: self.log(f"[!] Error: {e}"))
+            self.root.after(0, lambda: self.log(f"Error: {e}"))
 
         def reset_btn():
             self.btn_download.config(state="normal")
