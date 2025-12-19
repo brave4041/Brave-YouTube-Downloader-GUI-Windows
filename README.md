@@ -77,49 +77,32 @@ Aplikasi ini butuh 2 mesin utama agar bisa berjalan:
 
 ---
 
-## 📂 Cara Instalasi (Penyusunan Folder)
-
-Agar aplikasi bekerja sempurna, susun folder seperti ini:
+## 📂 Struktur Folder
+Agar rapi, pastikan susunan file anda seperti ini:
 
 ```text
-MyDownloader/
-├── 📁 ffmpeg/                       <-- (Khusus Windows) Folder FFMPEG
-├── 📄 yt-dlp.exe                    <-- (Khusus Windows) Mesin yt-dlp
-├── 📄 yt-dlp                        <-- (Khusus Linux/Mac) Mesin yt-dlp tanpa ekstensi
-└── 🐍 Brave_Download_Manager.py     <-- Script Utama (Jalan di Semua OS)
+Project_Folder/
+├── � Brave_Download_Manager.py   (Aplikasi Utama - All Platforms)
+├── 📄 yt-dlp.exe                  (Wajib untuk Windows)
+└── � ffmpeg/                     (Wajib untuk Windows)
 ```
-
-> **PENTING:**
-> - **Windows:** Wajib ada `ffmpeg` folder dan `yt-dlp.exe`.
-> - **Linux/Mac:** `ffmpeg` dan `yt-dlp` biasanya sudah terinstall di sistem (path), jadi folder ini bisa lebih bersih. App akan otomatis mendeteksinya.
+*Catatan: Pengguna Linux/Mac tidak perlu file exe/ffmpeg di sini jika sudah terinstall di sistem.*
 
 ---
 
 ## 📖 Cara Penggunaan
 
-1. **Install Library (Opsional)**
-   Aplikasi ini menggunakan `tkinter` (biasanya sudah bawaan Python).
-   Jika anda di Linux: `sudo apt-get install python3-tk`
+1. **Jalankan Aplikasi**
+   - **Windows:** Klik 2x file `Brave_Download_Manager.py` (atau EXE jika download release).
+   - **Linux/Mac:** Buka terminal, ketik `python3 Brave_Download_Manager.py`.
 
-2. **Jalankan Aplikasi**
-   - **Windows:** Klik kanan `Brave_Download_Manager.py` -> *Open with Python*, ATAU buka CMD dan ketik:
-     ```bash
-     python Brave_Download_Manager.py
-     ```
-   - **Linux/Mac:** Buka terminal dan ketik `python3 Brave_Download_Manager.py`.
+2. **Dapatkan Video**
+   - **Paste Link:** Copy URL YouTube -> Paste di kolom aplikasi.
+   - **Cek Video:** Klik tombol Cek -> Tunggu resolusi muncul.
+   - **Download:** Pilih kualitas -> Klik **DOWNLOAD**.
 
-3. **Paste Link**
-   Salin link video YouTube, lalu tempel (Paste) di kolom **YouTube URL**.
-
-4. **Cek Video**
-   Klik tombol `CEK VIDEO`. Tunggu sebentar hingga aplikasi mengambil data resolusi.
-
-5. **Pilih & Download**
-   - Pilih kualitas yang diinginkan (misal `Video 1080p` atau `Audio Only`).
-   - Klik `DOWNLOAD SEKARANG`.
-
-6. **Selesai!**
-   Video anda akan tersimpan otomatis di folder baru bernama **`Hasil Download`**.
+3. **Selesai!**
+   File video/mp3 akan muncul di folder `Hasil Download`.
 
 ---
 
