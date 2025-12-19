@@ -41,47 +41,26 @@ Cocok untuk anda yang mencari:
 
 ---
 
-## �️ Persiapan Awal (Wajib)
+## 🚀 Cara Instalasi (Step-by-Step)
 
-Aplikasi ini bersifat **Modular**. Artinya, mesin utamanya (`yt-dlp`) dan pengolah videonya (`ffmpeg`) harus didownload terpisah agar anda selalu mendapatkan **versi terbaru & terupdate**.
+### 1. Dapatkan Aplikasi
+Pilih metode yang sesuai dengan OS anda:
 
-### 1. 📥 Download Core Engine (yt-dlp)
-Tanpa ini, aplikasi tidak bisa jalan.
-1. Buka [Halaman Rilis yt-dlp Terbaru](https://github.com/yt-dlp/yt-dlp/releases).
-2. Cari file **`yt-dlp.exe`** di bagian **Assets**.
-3. **Download** file tersebut.
+**A. Pengguna Windows (Paling Mudah & Cepat)**
+- Download file **`Brave_Download_Manager.exe`** di menu [Releases](https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows/releases).
+- *Tidak perlu install Python.*
 
-### 2. 🎬 Download Video Processor (FFMPEG)
-Wajib agar bisa download video kualitas tinggi dan audio MP3.
+**B. Pengguna Lain (Linux / macOS / Developer)**
+- **Clone via Git:** `git clone https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows.git`
+- Pastikan sudah ada **Python 3.x** dan library `tkinter`.
 
-**Untuk Pengguna Windows:**
-1. Buka [Gyan.dev FFMPEG Builds](https://www.gyan.dev/ffmpeg/builds/).
-2. Download **`ffmpeg-release-essentials.zip`**, ekstrak/unzip, lalu copas foldernya ke folder project ini.
+### 2. Pasang "Mesin" (Dependencies)
+Aplikasi ini butuh 2 mesin utama agar bisa berjalan:
 
-**Untuk Pengguna Linux / macOS:**
-Biasanya cukup install lewat terminal saja:
-- **Ubuntu/Debian:** `sudo apt install ffmpeg`
-- **macOS (Homebrew):** `brew install ffmpeg`
-- **Arch Linux:** `sudo pacman -S ffmpeg`
-
-### 3. 📦 Download Aplikasi Ini (Pilih Salah Satu)
-
-**Opsi 1: Download EXE (Khusus Windows - Paling Mudah)**
-- Buka menu **Releases** di sebelah kanan halaman GitHub ini.
-- Download file **`Brave_Download_Manager.exe`**.
-- Tinggal klik 2x, langsung jalan (tanpa install Python).
-
-**Opsi 2: Download Manual (Zip)**
-- Klik tombol **Code** > **Download ZIP** di pojok kanan atas repo ini.
-- Ekstrak file zip-nya.
-- Anda perlu install Python untuk menjalankan script `.py`.
-
-**Opsi 3: Clone via Git (Semua OS: Windows, Mac, Linux)**
-Cara ini lebih cepat jika anda sudah menginstall Git (Wajib di Linux/Mac):
-```bash
-git clone https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows.git
-cd Brave-YouTube-Downloader-GUI-Windows
-```
+| Komponen | Cara Pasang di Windows | Cara Pasang di Linux / macOS |
+| :--- | :--- | :--- |
+| **yt-dlp** | Download `yt-dlp.exe` [disini](https://github.com/yt-dlp/yt-dlp/releases), taruh di folder aplikasi. | `wget` / download manual binary, taruh di folder. |
+| **ffmpeg** | Download [zip ffmpeg](https://www.gyan.dev/ffmpeg/builds/), ekstrak, copy foldernya ke folder aplikasi. | Install via terminal: `sudo apt install ffmpeg` |
 
 ---
 
