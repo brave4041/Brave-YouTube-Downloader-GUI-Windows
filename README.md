@@ -88,23 +88,6 @@ Pilih salah satu cara:
 
 ---
 
-## 📂 Struktur Folder
-Agar rapi, pastikan susunan file anda seperti ini:
-
-```text
-Project_Folder/
-├── 📦 Brave_Download_Manager_Bundled.exe  (Recommended)
-│
-├── ATAU (Developer / Source Code)
-│
-├── 🐍 Brave_Download_Manager.py   (Source Code)
-├── 📄 yt-dlp.exe                  (Khusus Developer Windows)
-└── 📁 ffmpeg/                     (Khusus Developer Windows)
-```
-*Catatan: Pengguna Linux/Mac tidak perlu file exe/ffmpeg di sini jika sudah terinstall di sistem.*
-
----
-
 ## 📖 Cara Penggunaan
 
 1. **Jalankan Aplikasi**
