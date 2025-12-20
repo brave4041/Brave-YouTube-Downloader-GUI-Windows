@@ -47,8 +47,9 @@ Cocok untuk anda yang mencari:
 
 **A. Pengguna Windows (Paling Mudah ⭐)**
 1. **Download:** Ambil file **`Brave_Download_Manager_Bundled.exe`** di release [v1.0](https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows/releases/tag/v1.0).
-2. **Jalankan:** Klik 2x file aplikasi tersebut (Langsung jalan, tanpa install apapun).
-3. **Mulai Download:**
+2. **Buat Folder:** Buat folder baru (misal: `YouTube Downloader`) dan masukkan file EXE tadi ke dalamnya (Wajib, agar hasil download rapi).
+3. **Jalankan:** Klik 2x file aplikasi tersebut (Langsung jalan, tanpa install apapun).
+4. **Mulai Download:**
    - **Paste Link** YouTube di kolom input.
    - Klik **Cek Video** -> Pilih kualitas.
    - Klik **DOWNLOAD**. File akan muncul di folder `Hasil Download`.
