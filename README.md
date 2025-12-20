@@ -74,20 +74,6 @@ Pilih salah satu cara:
 
 ---
 
-## 💻 Spesifikasi Sistem (System Requirements)
-
-| Komponen | Spesifikasi Minimum | Rekomendasi |
-| :--- | :--- | :--- |
-| **Python** | Python 3.8+ | **Python 3.10+** |
-| **OS** | Windows 8/10/11, Linux, macOS | **Windows 10/11** atau **Linux Ubuntu** |
-| **RAM** | 2 GB | 4 GB+ |
-| **Internet** | Stabil (untuk download) | Kencang |
-
-> **Wajib (Linux / macOS / Developer):** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
-> **(Pengguna Windows Bundled TIDAK PERLU install Python).**
-
----
-
 ## 📖 Cara Penggunaan
 
 1. **Jalankan Aplikasi**
@@ -103,6 +89,21 @@ Pilih salah satu cara:
    - File video/mp3 akan muncul di folder `Hasil Download`.
 
 ---
+
+## 💻 Spesifikasi Sistem (System Requirements)
+
+| Komponen | Spesifikasi Minimum | Rekomendasi |
+| :--- | :--- | :--- |
+| **Python** | Python 3.8+ | **Python 3.10+** |
+| **OS** | Windows 8/10/11, Linux, macOS | **Windows 10/11** atau **Linux Ubuntu** |
+| **RAM** | 2 GB | 4 GB+ |
+| **Internet** | Stabil (untuk download) | Kencang |
+
+> **Wajib (Linux / macOS / Developer):** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
+> **(Pengguna Windows Bundled TIDAK PERLU install Python).**
+
+---
+
 
 ## ❓ FAQ & Troubleshooting
 
