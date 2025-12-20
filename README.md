@@ -56,7 +56,13 @@ Cocok untuk anda yang mencari:
 ### 🅱️ Opsi B: (Mac, Linux, Devs)
 **Cocok untuk pengguna Mac/Linux atau pengguna Windows yang ingin menjalankan via Source Code.**
 
-1.  **Persiapan Sistem (via Terminal):**
+1.  **Clone Repository:**
+    ```bash
+    git clone https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows.git
+    cd Brave-YouTube-Downloader-GUI-Windows
+    ```
+
+2.  **Persiapan Sistem (via Terminal):**
     *   **Linux (Debian/Ubuntu/Kali):**
         ```bash
         sudo apt update && sudo apt install python3-tk ffmpeg
@@ -68,7 +74,7 @@ Cocok untuk anda yang mencari:
         pip install yt-dlp customtkinter pillow
         ```
 
-2.  **Gunakan File:**
+3.  **Gunakan File:**
     *   **Windows:**
         ```bash
         python Brave_Download_Manager.py
