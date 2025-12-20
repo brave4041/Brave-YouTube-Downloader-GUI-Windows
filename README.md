@@ -9,11 +9,11 @@
 [![Platform - Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://linux.org)
 [![Platform - macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple)](https://apple.com)
 
-**Download YouTube videos smoothly without typing complex commands.**
+**Download YouTube videos efficiently with a premium Dark UI.**
 <br>
-*Aplikasi "kulit" (GUI) modern untuk yt-dlp. Berbasis **PYTHON** agar bisa dijalankan di Windows, Linux, dan macOS!*
+*Tersedia dalam versi **Windows EXE (Lite)** dan **Universal Python Script**.*
 
-[Persiapan] • [Instalasi & Penggunaan] • [Troubleshooting]
+[Persiapan] • [Instalasi] • [Troubleshooting]
 
 </div>
 
@@ -45,75 +45,67 @@ Cocok untuk anda yang mencari:
 
 ### Pilih metode yang sesuai dengan OS anda:
 
-**A. Pengguna Windows (Paling Mudah ⭐)**
-1. **Download:** Ambil file **`Brave_Download_Manager_Bundled.exe`** di release [v1.0](https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows/releases/tag/v1.0).
-2. **Buat Folder:** Buat folder baru (misal: `YouTube Downloader`) dan masukkan file EXE tadi ke dalamnya (Wajib, agar hasil download rapi).
-3. **Jalankan:** Klik 2x file aplikasi tersebut (Langsung jalan, tanpa install apapun).
-4. **Mulai Download:**
-   - **Paste Link** YouTube di kolom input.
-   - Klik **Cek Video** -> Pilih kualitas.
-   - Klik **DOWNLOAD**. File akan muncul di folder `Hasil Download`.
+### 🅰️ Opsi A: Windows (Paling Mudah)
+**Cocok untuk pengguna umum. Tidak perlu install Python/Git.**
 
-**B. Pengguna Linux / macOS / Developer**
-1. **Setup Awal:**
-   - Clone repo: `git clone https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows.git`
-   - Install dependency (sesuai OS):
-     ```bash
-     # --- Ubuntu / Debian / Kali Linux ---
-     sudo apt update && sudo apt install python3-tk ffmpeg
-     pip install yt-dlp --break-system-packages
+1.  **Download:** Unduh file **`Brave_Downloader_Lite.exe`**.
+2.  **Folder:** Masukkan file EXE ke dalam folder baru (misal: `My Downloader`).
+3.  **Jalankan:** Klik 2x aplikasi.
+    *   *Saat pertama kali dibuka, jika FFmpeg belum ada, aplikasi akan otomatis mendownloadnya (~30MB) dan menyetingnya untuk anda.*
+4.  **Siap Pakai:** Masukkan Link -> Check URL -> Download.
 
-     # --- macOS ---
-     brew install python-tk ffmpeg && pip install yt-dlp
-     ```
-2. **Jalankan:** Buka terminal, ketik `python3 Brave_Download_Manager.py`.
-3. **Mulai Download:** (Sama seperti langkah nomor 4 di atas).
+> **Catatan:** File `ffmpeg_temp.zip` akan otomatis dihapus oleh sistem pintar kami setelah instalasi selesai.
 
-> **Wajib (Linux / macOS / Developer):** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
-> **(Pengguna Windows Bundled TIDAK PERLU install Python).**
+### 🅱️ Opsi B: Universal / Clean Version (Mac, Linux, Devs)
+**Cocok untuk pengguna Mac/Linux atau pengguna Windows yang ingin menjalankan via Source Code.**
+
+1.  **Persiapan Sistem (Wajib):**
+    *   Pastikan **Python 3.x** sudah terinstall.
+    *   Pastikan **FFmpeg** sudah terinstall dan masuk ke `PATH` sistem anda.
+    *   Install library: `pip install customtkinter yt-dlp pillow`
+
+2.  **Gunakan File Clean:**
+    *   Gunakan file **`Brave_Downloader_Clean.py`**.
+    *   Jalankan dengan perintah:
+        ```bash
+        python Brave_Downloader_Clean.py
+        ```
 
 ---
 
 ## ❓ FAQ & Troubleshooting
 
 <details>
-<summary><b>⚠️ Download berhenti di tengah jalan?</b></summary>
-Biasanya koneksi internet terputus, atau link video memiliki restriksi (member only/private). Coba download video lain untuk mengetes.
+<summary><b>⚠️ Tombol Download tidak bisa diklik?</b></summary>
+Pastikan anda sudah menekan tombol <b>CHECK URL</b> terlebih dahulu dan format video sudah muncul di menu pilihan.
 </details>
 
 <details>
-<summary><b>🎵 Kok error saat pilih Audio Only?</b></summary>
-Pastikan **FFMPEG** sudah terpasang dengan benar sesuai struktur folder di atas. Konversi ke MP3 membutuhkan FFMPEG.
+<summary><b>🎵 Error saat download Audio/MP3?</b></summary>
+Ini biasanya karena <b>FFmpeg</b> tidak terdeteksi.
+<ul>
+<li><b>Windows Lite:</b> Tutup aplikasi, hapus file <code>ffmpeg.exe</code> jika ada (yang korup), lalu buka aplikasi lagi agar ia mendownload ulang.</li>
+<li><b>Clean Version:</b> Pastikan anda sudah install FFmpeg di komputer anda.</li>
+</ul>
 </details>
 
 ---
 
-## 💻 Spesifikasi Sistem (System Requirements)
+## 💻 Spesifikasi Sistem
 
-| Komponen | Spesifikasi Minimum | Rekomendasi |
+| Komponen | Windows Lite | Universal Script |
 | :--- | :--- | :--- |
-| **Python** | Python 3.8+ | **Python 3.10+** |
-| **OS** | Windows 8/10/11, Linux, macOS | **Windows 10/11** atau **Linux Ubuntu** |
-| **RAM** | 2 GB | 4 GB+ |
-| **Internet** | Stabil (untuk download) | Kencang |
-
----
-
-
-## ⚖️ License & Attribution
-
-**MIT License** (GUI & Interface) - Free to use & modify.
-<br>
-This project is a GUI wrapper for **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** (The Unlicense).
-
-> **Disclaimer:** External binaries (`yt-dlp` & `ffmpeg`) are not distributed in this repo. Please download them from official sources.
+| **OS** | Windows 10/11 (64-bit) | Windows, macOS, Linux |
+| **Python** | *Tidak Perlu* | Python 3.8+ |
+| **FFmpeg** | *Auto-Setup* | Install Manual |
+| **Internet** | Wajib | Wajib |
 
 ---
 
 <div align="center">
 
-**Enjoy Downloading! 🚀**
+**Brave Downloader v1.0**
 <br>
-*Modified with ❤️ by Brave404*
+*Created with ❤️ by Brave404*
 
 </div>
