@@ -60,8 +60,14 @@ class BraveDownloaderApp(ctk.CTk):
         except Exception as e:
             print(f"Icon load error: {e}")
             
+        # Directory setup with fallback
         self.output_dir = os.path.join(self.cwd, DOWNLOAD_FOLDER)
-        if not os.path.exists(self.output_dir):
+        try:
+            if not os.path.exists(self.output_dir):
+                os.makedirs(self.output_dir, exist_ok=True)
+        except Exception:
+            # Fallback to defaults
+            self.output_dir = os.path.join(os.path.expanduser("~"), "Downloads", "BraveResults")
             os.makedirs(self.output_dir, exist_ok=True)
 
         self.setup_ui()
