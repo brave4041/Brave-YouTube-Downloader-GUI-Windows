@@ -48,7 +48,7 @@ Cocok untuk anda yang mencari:
 ### 🅰️ Opsi A: Windows (Paling Mudah)
 **Cocok untuk pengguna umum. Tidak perlu install Python/Git.**
 
-1.  **Download:** Unduh file **`Brave_Downloader.exe`**.
+1.  **Download:** Unduh file **`Brave_Downloader.exe`**
 2.  **Jalankan:** Klik 2x aplikasi.
     *   *Saat pertama kali dibuka, jika FFmpeg belum ada, aplikasi akan otomatis mendownloadnya (~30MB) dan menyetingnya untuk anda.*
 3.  **Siap Pakai:** Masukkan Link -> Check URL -> Download.
@@ -68,11 +68,11 @@ Cocok untuk anda yang mencari:
         pip install yt-dlp customtkinter pillow
         ```
 
-2.  **Gunakan File Clean:**
-    *   Gunakan file **`Brave_Downloader_Clean.py`**.
+2.  **Gunakan File :**
+    *   Gunakan file **`Brave_Downloader.py`**.
     *   Jalankan dengan perintah:
         ```bash
-        python Brave_Downloader_Clean.py
+        python Brave_Downloader.py
         ```
 
 ---
