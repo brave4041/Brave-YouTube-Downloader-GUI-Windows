@@ -72,6 +72,19 @@ Cocok untuk anda yang mencari:
 > **Wajib (Linux / macOS / Developer):** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
 > **(Pengguna Windows Bundled TIDAK PERLU install Python).**
 
+---
+
+## ❓ FAQ & Troubleshooting
+
+<details>
+<summary><b>⚠️ Download berhenti di tengah jalan?</b></summary>
+Biasanya koneksi internet terputus, atau link video memiliki restriksi (member only/private). Coba download video lain untuk mengetes.
+</details>
+
+<details>
+<summary><b>🎵 Kok error saat pilih Audio Only?</b></summary>
+Pastikan **FFMPEG** sudah terpasang dengan benar sesuai struktur folder di atas. Konversi ke MP3 membutuhkan FFMPEG.
+</details>
 
 ---
 
@@ -86,26 +99,6 @@ Cocok untuk anda yang mencari:
 
 ---
 
-## ❓ FAQ & Troubleshooting
-
-<details>
-<summary><b>❌ Aplikasi tidak mau terbuka / Error saat dibuka</b></summary>
-1. **Belum Install Python (Linux/Mac/Dev):** Pastikan anda sudah install Python 3.x.
-2. **Library Kurang (Linux/Mac):** Pastikan `tkinter` terinstall.
-3. **Double Click Gagal:** Coba buka lewat terminal/CMD: `python Brave_Download_Manager.py` untuk melihat pesan errornya.
-</details>
-
-<details>
-<summary><b>⚠️ Download berhenti di tengah jalan?</b></summary>
-Biasanya koneksi internet terputus, atau link video memiliki restriksi (member only/private). Coba download video lain untuk mengetes.
-</details>
-
-<details>
-<summary><b>🎵 Kok error saat pilih Audio Only?</b></summary>
-Pastikan **FFMPEG** sudah terpasang dengan benar sesuai struktur folder di atas. Konversi ke MP3 membutuhkan FFMPEG.
-</details>
-
----
 
 ## ⚖️ License & Attribution
 
