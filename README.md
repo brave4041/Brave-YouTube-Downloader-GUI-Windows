@@ -13,7 +13,7 @@
 <br>
 *Aplikasi "kulit" (GUI) modern untuk yt-dlp. Berbasis **PYTHON** agar bisa dijalankan di Windows, Linux, dan macOS!*
 
-[Persiapan] • [Instalasi] • [Cara Pakai] • [Troubleshooting]
+[Persiapan] • [Instalasi & Penggunaan] • [Troubleshooting]
 
 </div>
 
@@ -41,52 +41,32 @@ Cocok untuk anda yang mencari:
 
 ---
 
-## 🚀 Cara Instalasi (Step-by-Step)
+## 🚀 Cara Instalasi & Penggunaan (Step-by-Step)
 
 ### Pilih metode yang sesuai dengan OS anda:
 
-**A. Pengguna Windows**
-Pilih salah satu cara:
+**A. Pengguna Windows (Paling Mudah ⭐)**
+1. **Download:** Ambil file **`Brave_Download_Manager_Bundled.exe`** di release [v1.0](https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows/releases/tag/v1.0).
+2. **Jalankan:** Klik 2x file aplikasi tersebut (Langsung jalan, tanpa install apapun).
+3. **Mulai Download:**
+   - **Paste Link** YouTube di kolom input.
+   - Klik **Cek Video** -> Pilih kualitas.
+   - Klik **DOWNLOAD**. File akan muncul di folder `Hasil Download`.
 
-**Paling Mudah (Recommended) ⭐**
-- Download file **`Brave_Download_Manager_Bundled.exe`** di release [v1.0](https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows/releases/tag/v1.0).
-- Langsung buka aplikasinya. **Selesai!**
-- *Tidak perlu install Python, yt-dlp, atau ffmpeg. Semuanya sudah ada di dalam.*
+**B. Pengguna Linux / macOS / Developer**
+1. **Setup Awal:**
+   - Clone repo: `git clone https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows.git`
+   - Install dependency (sesuai OS):
+     ```bash
+     # --- Ubuntu / Debian / Kali Linux ---
+     sudo apt update && sudo apt install python3-tk ffmpeg
+     pip install yt-dlp --break-system-packages
 
-**B. Pengguna Lain (Linux / macOS / Developer)**
-- **Step 1: Clone via Git**
-  `git clone https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows.git`
-
-- **Step 2: Install Libraries & Dependencies (All-in-One)**
-  Tinggal copy-paste command di bawah ini sesuai OS anda:
-
-  ```bash
-  # --- Ubuntu / Debian / Kali Linux ---
-  sudo apt update
-  sudo apt install python3-tk ffmpeg
-  pip install yt-dlp --break-system-packages
-
-  # --- macOS ---
-  brew install python-tk ffmpeg
-  pip install yt-dlp
-  ```
-  *(Note: `--break-system-packages` diperlukan di versi Linux terbaru seperti Kali/Ubuntu 23+)*
-
----
-
-## 📖 Cara Penggunaan
-
-1. **Jalankan Aplikasi**
-   - **Windows:** Klik 2x `Brave_Download_Manager_Bundled.exe`.
-   - **Linux/Mac:** Buka terminal, ketik `python3 Brave_Download_Manager.py`.
-
-2. **Dapatkan Video**
-   - **Paste Link:** Copy URL YouTube -> Paste di kolom aplikasi.
-   - **Cek Video:** Klik tombol Cek -> Tunggu resolusi muncul.
-   - **Download:** Pilih kualitas -> Klik **DOWNLOAD**.
-
-3. **Selesai!**
-   - File video/mp3 akan muncul di folder `Hasil Download`.
+     # --- macOS ---
+     brew install python-tk ffmpeg && pip install yt-dlp
+     ```
+2. **Jalankan:** Buka terminal, ketik `python3 Brave_Download_Manager.py`.
+3. **Mulai Download:** (Sama seperti langkah nomor 3 di atas).
 
 ---
 
@@ -103,7 +83,6 @@ Pilih salah satu cara:
 > **(Pengguna Windows Bundled TIDAK PERLU install Python).**
 
 ---
-
 
 ## ❓ FAQ & Troubleshooting
 
