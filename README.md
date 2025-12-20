@@ -71,11 +71,11 @@ Cocok untuk anda yang mencari:
 2.  **Gunakan File:**
     *   **Windows:**
         ```bash
-        python Brave_Downloader.py
+        python Brave_Download_Manager.py
         ```
     *   **macOS / Linux:**
         ```bash
-        python3 Brave_Downloader.py
+        python3 Brave_Download_Manager.py
         ```
 
 ---
