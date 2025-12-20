@@ -9,11 +9,11 @@
 [![Platform - Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://linux.org)
 [![Platform - macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple)](https://apple.com)
 
-**Download YouTube videos efficiently with a premium Dark UI.**
+**Download YouTube videos smoothly without typing complex commands.**
 <br>
-*Tersedia dalam versi **Windows EXE (Lite)** dan **Universal Python Script**.*
+*Aplikasi "kulit" (GUI) modern untuk yt-dlp. Berbasis **PYTHON** agar bisa dijalankan di Windows, Linux, dan macOS!*
 
-[Persiapan] • [Instalasi] • [Troubleshooting]
+[Persiapan] • [Instalasi & Penggunaan] • [Troubleshooting]
 
 </div>
 
@@ -48,21 +48,25 @@ Cocok untuk anda yang mencari:
 ### 🅰️ Opsi A: Windows (Paling Mudah)
 **Cocok untuk pengguna umum. Tidak perlu install Python/Git.**
 
-1.  **Download:** Unduh file **`Brave_Downloader_Lite.exe`**.
-2.  **Folder:** Masukkan file EXE ke dalam folder baru (misal: `My Downloader`).
-3.  **Jalankan:** Klik 2x aplikasi.
+1.  **Download:** Unduh file **`Brave_Downloader.exe`**.
+2.  **Jalankan:** Klik 2x aplikasi.
     *   *Saat pertama kali dibuka, jika FFmpeg belum ada, aplikasi akan otomatis mendownloadnya (~30MB) dan menyetingnya untuk anda.*
-4.  **Siap Pakai:** Masukkan Link -> Check URL -> Download.
+3.  **Siap Pakai:** Masukkan Link -> Check URL -> Download.
 
-> **Catatan:** File `ffmpeg_temp.zip` akan otomatis dihapus oleh sistem pintar kami setelah instalasi selesai.
-
-### 🅱️ Opsi B: Universal / Clean Version (Mac, Linux, Devs)
+### 🅱️ Opsi B: (Mac, Linux, Devs)
 **Cocok untuk pengguna Mac/Linux atau pengguna Windows yang ingin menjalankan via Source Code.**
 
-1.  **Persiapan Sistem (Wajib):**
-    *   Pastikan **Python 3.x** sudah terinstall.
-    *   Pastikan **FFmpeg** sudah terinstall dan masuk ke `PATH` sistem anda.
-    *   Install library: `pip install customtkinter yt-dlp pillow`
+1.  **Persiapan Sistem (via Terminal):**
+    *   **Linux (Debian/Ubuntu/Kali):**
+        ```bash
+        sudo apt update && sudo apt install python3-tk ffmpeg
+        pip install yt-dlp customtkinter pillow --break-system-packages
+        ```
+    *   **macOS:**
+        ```bash
+        brew install python-tk ffmpeg
+        pip install yt-dlp customtkinter pillow
+        ```
 
 2.  **Gunakan File Clean:**
     *   Gunakan file **`Brave_Downloader_Clean.py`**.
@@ -84,7 +88,7 @@ Pastikan anda sudah menekan tombol <b>CHECK URL</b> terlebih dahulu dan format v
 <summary><b>🎵 Error saat download Audio/MP3?</b></summary>
 Ini biasanya karena <b>FFmpeg</b> tidak terdeteksi.
 <ul>
-<li><b>Windows Lite:</b> Tutup aplikasi, hapus file <code>ffmpeg.exe</code> jika ada (yang korup), lalu buka aplikasi lagi agar ia mendownload ulang.</li>
+<li><b>Windows :</b> Tutup aplikasi, hapus file <code>ffmpeg.exe</code> jika ada (yang korup), lalu buka aplikasi lagi agar ia mendownload ulang.</li>
 <li><b>Clean Version:</b> Pastikan anda sudah install FFmpeg di komputer anda.</li>
 </ul>
 </details>
@@ -93,7 +97,7 @@ Ini biasanya karena <b>FFmpeg</b> tidak terdeteksi.
 
 ## 💻 Spesifikasi Sistem
 
-| Komponen | Windows Lite | Universal Script |
+| Komponen | Windows | Universal Script |
 | :--- | :--- | :--- |
 | **OS** | Windows 10/11 (64-bit) | Windows, macOS, Linux |
 | **Python** | *Tidak Perlu* | Python 3.8+ |
