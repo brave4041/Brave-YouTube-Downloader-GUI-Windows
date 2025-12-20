@@ -28,7 +28,7 @@ Cocok untuk anda yang mencari:
 - **YouTube Downloader PC Gratis** tanpa watermark.
 - **Cara download video YouTube jadi MP3** (Lagu) dengan cepat.
 - **Aplikasi download video YouTube tercepat** dan stabil.
-- - Download playlist atau video durasi panjang anti gagal.
+- Download playlist atau video durasi panjang anti gagal.
 
 ---
 
@@ -49,7 +49,7 @@ Cocok untuk anda yang mencari:
 Pilih salah satu cara:
 
 **Paling Mudah (Recommended) ⭐**
-- Download file **`Brave_Download_Manager_Bundled.exe`**.
+- Download file **`Brave_Download_Manager_Bundled.exe`** di release [v1.0](https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows/releases/tag/v1.0).
 - Langsung buka aplikasinya. **Selesai!**
 - *Tidak perlu install Python, yt-dlp, atau ffmpeg. Semuanya sudah ada di dalam.*
 
@@ -83,8 +83,8 @@ Pilih salah satu cara:
 | **RAM** | 2 GB | 4 GB+ |
 | **Internet** | Stabil (untuk download) | Kencang |
 
-> **Wajib (Khusus Opsi 2 / Linux / macOS):** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
-> **(Opsi 1 Bundled TIDAK PERLU install Python).**
+> **Wajib (Linux / macOS / Developer):** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
+> **(Pengguna Windows Bundled TIDAK PERLU install Python).**
 
 ---
 
@@ -93,13 +93,13 @@ Agar rapi, pastikan susunan file anda seperti ini:
 
 ```text
 Project_Folder/
-├── 📦 Brave_Download_Manager_Bundled.exe  (Opsi 1 - Cukup file ini saja)
+├── 📦 Brave_Download_Manager_Bundled.exe  (Recommended)
 │
-├── ATAU (Jika pakai Opsi 2 / Source Code)
+├── ATAU (Developer / Source Code)
 │
 ├── 🐍 Brave_Download_Manager.py   (Source Code)
-├── 📄 yt-dlp.exe                  (Wajib untuk Windows Opsi 2)
-└── 📁 ffmpeg/                     (Wajib untuk Windows Opsi 2)
+├── 📄 yt-dlp.exe                  (Khusus Developer Windows)
+└── 📁 ffmpeg/                     (Khusus Developer Windows)
 ```
 *Catatan: Pengguna Linux/Mac tidak perlu file exe/ffmpeg di sini jika sudah terinstall di sistem.*
 
@@ -108,8 +108,7 @@ Project_Folder/
 ## 📖 Cara Penggunaan
 
 1. **Jalankan Aplikasi**
-   - **Windows (Opsi 1):** Klik 2x `Brave_Download_Manager_Bundled.exe`.
-   - **Windows (Opsi 2):** Klik 2x `Brave_Download_Manager.exe`.
+   - **Windows:** Klik 2x `Brave_Download_Manager_Bundled.exe`.
    - **Linux/Mac:** Buka terminal, ketik `python3 Brave_Download_Manager.py`.
 
 2. **Dapatkan Video**
@@ -126,7 +125,7 @@ Project_Folder/
 
 <details>
 <summary><b>❌ Aplikasi tidak mau terbuka / Error saat dibuka</b></summary>
-1. **Belum Install Python (Opsi 2 Manual):** Pastikan anda sudah install Python 3.x.
+1. **Belum Install Python (Linux/Mac/Dev):** Pastikan anda sudah install Python 3.x.
 2. **Library Kurang (Linux/Mac):** Pastikan `tkinter` terinstall.
 3. **Double Click Gagal:** Coba buka lewat terminal/CMD: `python Brave_Download_Manager.py` untuk melihat pesan errornya.
 </details>
