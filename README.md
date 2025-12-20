@@ -102,13 +102,11 @@ Pastikan **FFMPEG** sudah terpasang dengan benar sesuai struktur folder di atas.
 
 ## ⚖️ License & Attribution
 
-**This project is a GUI wrapper for [yt-dlp](https://github.com/yt-dlp/yt-dlp).**
-*yt-dlp is a separate project with its own license (The Unlicense).*
+**MIT License** (GUI & Interface) - Free to use & modify.
+<br>
+This project is a GUI wrapper for **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** (The Unlicense).
 
-This project (the GUI/Interface) is licensed under the **MIT License**.
-You are free to use, modify, and distribute this interface code.
-
-> **Note:** This software relies on `yt-dlp.exe` and `ffmpeg` to function. We do not distribute these binaries directly in this repository code; users are instructed to download them from their official sources to ensure compliance and latest updates.
+> **Disclaimer:** External binaries (`yt-dlp` & `ffmpeg`) are not distributed in this repo. Please download them from official sources.
 
 ---
 
