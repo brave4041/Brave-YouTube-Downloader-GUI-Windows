@@ -68,10 +68,14 @@ Cocok untuk anda yang mencari:
         pip install yt-dlp customtkinter pillow
         ```
 
-2.  **Gunakan File :**
-    *   Jalankan dengan perintah:
+2.  **Gunakan File:**
+    *   **Windows:**
         ```bash
         python Brave_Downloader.py
+        ```
+    *   **macOS / Linux:**
+        ```bash
+        python3 Brave_Downloader.py
         ```
 
 ---
@@ -98,7 +102,7 @@ Ini biasanya karena <b>FFmpeg</b> tidak terdeteksi.
 
 | Komponen | Windows | Universal Script |
 | :--- | :--- | :--- |
-| **OS** | Windows 10/11 (64-bit) | Windows, macOS, Linux |
+| **OS** | Windows 10/11 | Windows, macOS, Linux |
 | **Python** | *Tidak Perlu* | Python 3.8+ |
 | **FFmpeg** | *Auto-Setup* | Install Manual |
 | **Internet** | Wajib | Wajib |
