@@ -69,7 +69,6 @@ Cocok untuk anda yang mencari:
         ```
 
 2.  **Gunakan File :**
-    *   Gunakan file **`Brave_Downloader.py`**.
     *   Jalankan dengan perintah:
         ```bash
         python Brave_Downloader.py
