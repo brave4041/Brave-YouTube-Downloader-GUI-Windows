@@ -67,7 +67,7 @@ Cocok untuk anda yang mencari:
      brew install python-tk ffmpeg && pip install yt-dlp
      ```
 2. **Jalankan:** Buka terminal, ketik `python3 Brave_Download_Manager.py`.
-3. **Mulai Download:** (Sama seperti langkah nomor 3 di atas).
+3. **Mulai Download:** (Sama seperti langkah nomor 4 di atas).
 
 ---
 
