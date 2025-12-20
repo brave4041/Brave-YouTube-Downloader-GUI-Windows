@@ -48,8 +48,7 @@ Cocok untuk anda yang mencari:
 ### 🅰️ Opsi A: Windows (Paling Mudah)
 **Cocok untuk pengguna umum. Tidak perlu install Python/Git.**
 
-1.  **Download:** Unduh file **`Brave_Downloader.exe`**
-2.  **Jalankan:** Klik 2x aplikasi.
+1.  **Download:** Unduh file **`Brave_Downloader.exe`** di [Link Ini](https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows/releases/download/v1.0/Brave_Downloader.exe).
     *   *Saat pertama kali dibuka, jika FFmpeg belum ada, aplikasi akan otomatis mendownloadnya (~30MB) dan menyetingnya untuk anda.*
 3.  **Siap Pakai:** Masukkan Link -> Check URL -> Download.
 
