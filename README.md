@@ -28,7 +28,7 @@ Cocok untuk anda yang mencari:
 - **YouTube Downloader PC Gratis** tanpa watermark.
 - **Cara download video YouTube jadi MP3** (Lagu) dengan cepat.
 - **Aplikasi download video YouTube tercepat** dan stabil.
-- Download playlist atau video durasi panjang anti gagal.
+- - Download playlist atau video durasi panjang anti gagal.
 
 ---
 
@@ -43,35 +43,34 @@ Cocok untuk anda yang mencari:
 
 ## 🚀 Cara Instalasi (Step-by-Step)
 
-### 1. Dapatkan Aplikasi
-Pilih metode yang sesuai dengan OS anda:
+### Pilih metode yang sesuai dengan OS anda:
 
-**A. Pengguna Windows (Paling Mudah & Cepat)**
-- Download file **`Brave_Download_Manager.exe`** di menu [Releases](https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows/releases).
-- *Tidak perlu install Python.*
+**A. Pengguna Windows**
+Pilih salah satu cara:
+
+**Paling Mudah (Recommended) ⭐**
+- Download file **`Brave_Download_Manager_Bundled.exe`**.
+- Langsung buka aplikasinya. **Selesai!**
+- *Tidak perlu install Python, yt-dlp, atau ffmpeg. Semuanya sudah ada di dalam.*
 
 **B. Pengguna Lain (Linux / macOS / Developer)**
-- **Clone via Git:** `git clone https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows.git`
-- **Install Library:**
+- **Step 1: Clone via Git**
+  `git clone https://github.com/brave4041/Brave-YouTube-Downloader-GUI-Windows.git`
+
+- **Step 2: Install Libraries & Dependencies (All-in-One)**
+  Tinggal copy-paste command di bawah ini sesuai OS anda:
+
   ```bash
-  # 1. Install Tkinter (Wajib untuk GUI)
-  sudo apt install python3-tk    # Ubuntu/Debian
-  brew install python-tk         # macOS
-
-  # 2. Install YT-DLP (Mesin Download)
-  pip install yt-dlp
-
-  # ⚠️ Jika muncul error "externally-managed-environment" (Kali Linux / Ubuntu 23+):
+  # --- Ubuntu / Debian / Kali Linux ---
+  sudo apt update
+  sudo apt install python3-tk ffmpeg
   pip install yt-dlp --break-system-packages
+
+  # --- macOS ---
+  brew install python-tk ffmpeg
+  pip install yt-dlp
   ```
-
-### 2. Pasang "Mesin" (Dependencies)
-Aplikasi ini butuh 2 mesin utama agar bisa berjalan:
-
-| Komponen | Cara Pasang di Windows | Cara Pasang di Linux / macOS |
-| :--- | :--- | :--- |
-| **yt-dlp** | Download `yt-dlp.exe` [disini](https://github.com/yt-dlp/yt-dlp/releases), taruh di folder aplikasi. | **Via pip** (Recommended - Lihat atas). |
-| **ffmpeg** | Download [zip ffmpeg](https://www.gyan.dev/ffmpeg/builds/), ekstrak, copy foldernya ke folder aplikasi. | Linux: `sudo apt install ffmpeg`<br>macOS: `brew install ffmpeg` |
+  *(Note: `--break-system-packages` diperlukan di versi Linux terbaru seperti Kali/Ubuntu 23+)*
 
 ---
 
@@ -84,7 +83,8 @@ Aplikasi ini butuh 2 mesin utama agar bisa berjalan:
 | **RAM** | 2 GB | 4 GB+ |
 | **Internet** | Stabil (untuk download) | Kencang |
 
-> **Wajib:** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
+> **Wajib (Khusus Opsi 2 / Linux / macOS):** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
+> **(Opsi 1 Bundled TIDAK PERLU install Python).**
 
 ---
 
@@ -93,9 +93,13 @@ Agar rapi, pastikan susunan file anda seperti ini:
 
 ```text
 Project_Folder/
-├── � Brave_Download_Manager.py   (Aplikasi Utama - All Platforms)
-├── 📄 yt-dlp.exe                  (Wajib untuk Windows)
-└── � ffmpeg/                     (Wajib untuk Windows)
+├── 📦 Brave_Download_Manager_Bundled.exe  (Opsi 1 - Cukup file ini saja)
+│
+├── ATAU (Jika pakai Opsi 2 / Source Code)
+│
+├── 🐍 Brave_Download_Manager.py   (Source Code)
+├── 📄 yt-dlp.exe                  (Wajib untuk Windows Opsi 2)
+└── 📁 ffmpeg/                     (Wajib untuk Windows Opsi 2)
 ```
 *Catatan: Pengguna Linux/Mac tidak perlu file exe/ffmpeg di sini jika sudah terinstall di sistem.*
 
@@ -104,7 +108,8 @@ Project_Folder/
 ## 📖 Cara Penggunaan
 
 1. **Jalankan Aplikasi**
-   - **Windows:** Klik 2x file `Brave_Download_Manager.py` (atau EXE jika download release).
+   - **Windows (Opsi 1):** Klik 2x `Brave_Download_Manager_Bundled.exe`.
+   - **Windows (Opsi 2):** Klik 2x `Brave_Download_Manager.exe`.
    - **Linux/Mac:** Buka terminal, ketik `python3 Brave_Download_Manager.py`.
 
 2. **Dapatkan Video**
@@ -113,7 +118,7 @@ Project_Folder/
    - **Download:** Pilih kualitas -> Klik **DOWNLOAD**.
 
 3. **Selesai!**
-   File video/mp3 akan muncul di folder `Hasil Download`.
+   - File video/mp3 akan muncul di folder `Hasil Download`.
 
 ---
 
@@ -121,8 +126,8 @@ Project_Folder/
 
 <details>
 <summary><b>❌ Aplikasi tidak mau terbuka / Error saat dibuka</b></summary>
-1. **Belum Install Python:** Pastikan anda sudah install Python 3.x.
-2. **Library Kurang:** Jika di Linux, pastikan `tkinter` terinstall (`sudo apt install python3-tk`).
+1. **Belum Install Python (Opsi 2 Manual):** Pastikan anda sudah install Python 3.x.
+2. **Library Kurang (Linux/Mac):** Pastikan `tkinter` terinstall.
 3. **Double Click Gagal:** Coba buka lewat terminal/CMD: `python Brave_Download_Manager.py` untuk melihat pesan errornya.
 </details>
 
