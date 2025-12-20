@@ -69,6 +69,10 @@ Cocok untuk anda yang mencari:
 2. **Jalankan:** Buka terminal, ketik `python3 Brave_Download_Manager.py`.
 3. **Mulai Download:** (Sama seperti langkah nomor 4 di atas).
 
+> **Wajib (Linux / macOS / Developer):** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
+> **(Pengguna Windows Bundled TIDAK PERLU install Python).**
+
+
 ---
 
 ## 💻 Spesifikasi Sistem (System Requirements)
@@ -79,9 +83,6 @@ Cocok untuk anda yang mencari:
 | **OS** | Windows 8/10/11, Linux, macOS | **Windows 10/11** atau **Linux Ubuntu** |
 | **RAM** | 2 GB | 4 GB+ |
 | **Internet** | Stabil (untuk download) | Kencang |
-
-> **Wajib (Linux / macOS / Developer):** Pastikan anda sudah menginstall **PYTHON** di komputer anda. Jika belum, download di [python.org](https://www.python.org/).
-> **(Pengguna Windows Bundled TIDAK PERLU install Python).**
 
 ---
 
